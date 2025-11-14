@@ -79,10 +79,6 @@ resume-matcher/
 ├── requirements.txt
 ├── streamlit_app.ipynb      # Main Colab Notebook (UI + Model + GPT)
 │
-├── assets/                  # Images for README
-│   ├── architecture.png
-│   ├── pipeline.png
-│   ├── example_graph.png
 │
 ├── data/
 │   ├── sample_resume.pdf
