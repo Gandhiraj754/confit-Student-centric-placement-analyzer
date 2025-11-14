@@ -15,6 +15,22 @@ The entire system runs from **Google Colab**, loads the **trained Stage-4 model 
 
 ---
 
+# 📥 Model Download
+
+Download the trained **Stage-4 Graph-Distilled Model** here:
+
+🔗 **https://drive.google.com/file/d/15aG48b-SQKIA2BHzkpRzX695EGIfSfCw/view?usp=drive_link**
+
+After downloading, upload it to your Google Drive at:
+
+```
+/content/drive/MyDrive/MINI Project DATA/output_confit_stage4.ckpt
+```
+
+> You can also update the path in `streamlit_app.ipynb` if your Drive structure is different.
+
+---
+
 # 📌 Features
 
 ### ✅ **1. PDF Upload for Resume / JD**
@@ -30,20 +46,21 @@ GPT extracts:
 
 ### ✅ **3. CONFIT Stage-4 Model**
 Your model performs:
-- Resume embedding
-- JD embedding
-- Cosine similarity
-- Match score
-- Missing skill prediction
+- Resume embedding  
+- JD embedding  
+- Cosine similarity  
+- Match score  
+- Missing skill prediction  
 
 ### 🧠 Why Stage-4?
-- Faster (student model)
-- Smarter (graph-distilled from Stage-3)
-- Learns section relationships (skills ↔ experience ↔ education)
-- Best generalization for real resumes
+- Faster (student model)  
+- Smarter (graph-distilled from Stage-3)  
+- Learns section relationships (skills ↔ experience ↔ education)  
+- Best generalization for real resumes  
 
 ### ✅ **4. Missing Skill Detection**
 Automatic comparison of:
+
 ```
 JD skills – Resume skills
 ```
@@ -62,10 +79,10 @@ Shows:
 - JD nodes  
 - Edges between matching/missing skills  
 
-### ✅ **7. Streamlit UI (Clean & Simple)**
+### ✅ **7. Streamlit UI (Clean & Simple)**  
 All features inside one dashboard.
 
-### ✅ **8. ngrok Support**
+### ✅ **8. ngrok Support**  
 Run Streamlit in **Colab** and access it publicly.
 
 ---
@@ -107,12 +124,14 @@ For Colab, packages are installed inside the notebook.
 2. Run:
    - Mount Drive  
    - Install dependencies  
-   - Load Stage-4 checkpoint from Google Drive  
+   - Upload the Stage-4 checkpoint into Drive  
+   - Load the model  
    - Create `app.py`  
    - Start ngrok  
    - Launch Streamlit  
 
 3. Access your public URL from ngrok:
+
 ```
 https://xxxx-xx-xx-xx.ngrok-free.app
 ```
@@ -177,16 +196,10 @@ GPT-4o-mini generates:
 
 ---
 
-# 🖼 Sample Output
-
-(Insert your screenshots here from `/assets/screenshots`)
-
----
-
 # 📘 Model Information
 
 **Model:** CONFIT Stage-4 Graph-Distilled Student  
-**Location:** Google Drive  
+**Location:** Google Drive (download link included above)  
 **Embedding Dimension:** 512  
 **Backbone:** E5-base encoder  
 **Graph:** Section → Section, Skill → Skill  
@@ -213,10 +226,6 @@ For major changes, please open an issue first to discuss.
 
 ---
 
-
-
----
-
 # ⭐ Author
 **MS Suhel**  
 AI Engineer • Resume Matching System • CONFIT Research Adaptation  
@@ -236,4 +245,3 @@ This repo contains a **complete ATS automation system**, powered by:
 - Cloud deployment via Colab + ngrok  
 
 You now have a fully functional **industry-level resume matching engine**.
-

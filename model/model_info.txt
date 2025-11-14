@@ -1,0 +1,25 @@
+Model Name: CONFIT Stage-4 Graph-Distilled Encoder
+Model Version: v1.0
+Embedding Dimension: 512
+Backbone: E5-base Encoder
+
+Training Stages:
+  - Stage-1: Multi-section Encoder
+  - Stage-2: Hard Negative Training (Triplet + InfoNCE)
+  - Stage-3: Graph-Aware Teacher (Section Attention + Fusion)
+  - Stage-4: Graph-Distilled Student (Final Production Model)
+
+Checkpoint Download Link:
+https://drive.google.com/file/d/15aG48b-SQKIA2BHzkpRzX695EGIfSfCw/view?usp=drive_link
+
+Expected Drive Path After Upload:
+/content/drive/MyDrive/stage4_student.pt
+
+Usage:
+  - Used only for inference inside Streamlit/Colab
+  - Loaded via model_loader or directly in the notebook
+  - Provides 512-dimensional resume/job embeddings
+  - Supports match score, missing skills, and AI summary
+
+Date Trained: 2025
+Author: MS Suhel
