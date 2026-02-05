@@ -226,13 +226,6 @@ For major changes, please open an issue first to discuss.
 
 ---
 
-# ⭐ Author
-**MS Suhel**  
-AI Engineer • Resume Matching System • CONFIT Research Adaptation  
-Feel free to connect on GitHub or LinkedIn.
-
----
-
 # 🎉 Final Words
 
 This repo contains a **complete ATS automation system**, powered by:
